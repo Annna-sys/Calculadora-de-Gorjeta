@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de gorjeta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculador-container">
+        <h1>Calculadora de Gorjeta</h1>
+        <div class="input-group">
+            <label for="bill-amount">Valor da conta (R$):</label>
+            <input type="number" id="bill-amount" placeholder="0.00" min="0" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="tip-percentage">Porcentagem da Gorjeta (%):</label>
+            <input type="number" id="tip-percentage" min="0" value="15">
+        </div>
+        <button id="calculate-btn">Calcular Gorjeta</button>
+        <div id="results-box">
+            <h2>Resultado</h2>
+            <p>Gorjeta total: <span id="tip-total">R$ 0.00</span></p>
+            <p>Total a pagar: <span id="bill-total">R$ 0.00</span></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
